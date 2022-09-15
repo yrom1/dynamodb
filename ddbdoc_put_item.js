@@ -1,6 +1,6 @@
 
 import { PutCommand } from "@aws-sdk/lib-dynamodb";
-import { ddbDocClient } from "./libs/ddbDocClient";
+import { ddbDocClient } from "./libs/ddbDocClient.js";
 
 // Set the parameters.
 export const params = {
