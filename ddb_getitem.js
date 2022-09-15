@@ -4,11 +4,11 @@ import { ddbClient } from "./libs/ddbClient.js";
 
 // Set the parameters
 export const params = {
-    TableName: "plots", //TABLE_NAME
+    TableName: "plotsV2", //TABLE_NAME
     Key: {
-        "name": { S: "test" },
+        "key": { "S": "test" },
     },
-    ProjectionExpression: "ATTRIBUTE_NAME",
+    // ProjectionExpression: "ATTRIBUTE_NAME",
 };
 
 export const run = async () => {

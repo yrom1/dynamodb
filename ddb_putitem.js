@@ -4,9 +4,13 @@ import { ddbClient } from "./libs/ddbClient.js";
 
 // Set the parameters
 export const params = {
-    TableName: "plots",
+    TableName: "plotsV2",
     Item: {
-        "name": { S: "test" },
+        "key": { "S": "test" },
+        // okay this is weird
+        // to put a number, it must be sent as a string
+        // https://stackoverflow.com/questions/71488712/number-value-cannot-be-converted-to-string-when-updating-item
+        "value": { "N": "42" },
     },
 };
 
