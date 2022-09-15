@@ -18,7 +18,7 @@ export const params = {
     NullAttribute: null
      */
     Key: {
-        "key": "test", // For example, 'Season': 2.
+        "key": "test2", // For example, 'Season': 2.
         // sortKey: "VALUE", // For example,  'Episode': 1; (only required if table has sort key).
     },
 };
@@ -27,7 +27,7 @@ export const run = async () => {
     try {
         const data = await ddbDocClient.send(new GetCommand(params));
         console.log("Success :", data);
-        // console.log("Success :", data.Item);
+        console.log("Success :", data.Item.value);
         return data;
     } catch (err) {
         console.log("Error", err);
