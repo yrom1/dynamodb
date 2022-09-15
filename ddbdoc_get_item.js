@@ -4,7 +4,7 @@ import { ddbDocClient } from "./libs/ddbDocClient.js";
 
 // Set the parameters.
 export const params = {
-    TableName: "plotV2",
+    TableName: "plotsV2",
     /*
     Convert the key JavaScript object you are retrieving to the
     required Amazon DynamoDB record. The format of values specifies
